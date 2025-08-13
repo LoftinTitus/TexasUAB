@@ -1,4 +1,4 @@
-import { MemoryRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
 import { Footer } from './components/Footer';
 import { ErrorBoundary } from './components/ErrorBoundary';
@@ -12,7 +12,7 @@ import { ContactPage } from './pages/ContactPage';
 export default function App() {
   return (
     <ErrorBoundary>
-      <Router initialEntries={[window.location.pathname || '/']} initialIndex={0}>
+      <Router>
         <div className="min-h-screen bg-white">
           <Navigation />
           <main>
