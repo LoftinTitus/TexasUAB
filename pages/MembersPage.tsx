@@ -1,6 +1,5 @@
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { Mail, Linkedin } from 'lucide-react';
 
 export function MembersPage() {
@@ -90,7 +89,7 @@ export function MembersPage() {
               <Card key={index} className="hover:shadow-lg transition-shadow border-orange-100">
                 <CardContent className="p-6">
                   <div className="text-center mb-4">
-                    <ImageWithFallback
+                    <img
                       src={member.image}
                       alt={member.name}
                       className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-orange-100"
@@ -152,7 +151,7 @@ export function MembersPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-lg overflow-hidden shadow-xl">
-            <ImageWithFallback
+            <img
               src="https://images.unsplash.com/photo-1568021743040-fb2fa4f7d17e?w=1200&h=400&fit=crop&crop=center"
               alt="UT Austin Engineering Campus"
               className="w-full h-64 object-cover"

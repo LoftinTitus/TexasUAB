@@ -1,5 +1,4 @@
 import { Button } from '../components/ui/button';
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { Link } from 'react-router-dom';
 
 export function HomePage() {
@@ -37,7 +36,7 @@ export function HomePage() {
             
             <div className="relative">
               <div className="bg-orange-100 rounded-lg p-8">
-                <ImageWithFallback
+                <img
                   src="https://images.unsplash.com/photo-1562774053-701939374585?w=500&h=400&fit=crop&crop=center"
                   alt="UT Austin Chemical Engineering Laboratory"
                   className="rounded-lg shadow-lg w-full h-80 object-cover"
@@ -83,7 +82,7 @@ export function HomePage() {
             </p>
           </div>
           <div className="relative rounded-lg overflow-hidden shadow-xl">
-            <ImageWithFallback
+            <img
               src="https://images.unsplash.com/photo-1606156684711-297b91e89a5c?w=1200&h=600&fit=crop&crop=center"
               alt="UT Austin Campus Tower"
               className="w-full h-96 object-cover"

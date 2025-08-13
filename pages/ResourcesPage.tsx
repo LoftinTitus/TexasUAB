@@ -1,7 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { ExternalLink, FileText, Users, Calendar, BookOpen, Briefcase, Download } from 'lucide-react';
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 export function ResourcesPage() {
   const academicResources = [
@@ -267,20 +266,6 @@ export function ResourcesPage() {
               <ExternalLink className="h-6 w-6 mb-2 text-orange-700" />
               <span className="text-sm">Student Organizations</span>
             </Button>
-          </div>
-
-          {/* UT Campus Image */}
-          <div className="relative rounded-lg overflow-hidden shadow-xl">
-            <ImageWithFallback
-              src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&h=400&fit=crop&crop=center"
-              alt="UT Austin Chemical Engineering Building"
-              className="w-full h-64 object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-            <div className="absolute bottom-8 left-8 text-white">
-              <h3 className="text-white mb-2">CPE Building - Home of Chemical Engineering</h3>
-              <p className="text-gray-200">State-of-the-art facilities for world-class education</p>
-            </div>
           </div>
         </div>
       </section>

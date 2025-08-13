@@ -2,7 +2,6 @@ import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
 import { Calendar, Clock, Search, Filter } from 'lucide-react';
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 export function NewsPage() {
   const news = [
@@ -151,7 +150,7 @@ export function NewsPage() {
               <Card key={index} className="hover:shadow-lg transition-shadow border-orange-100 overflow-hidden">
                 {article.image && (
                   <div className="aspect-video">
-                    <ImageWithFallback
+                    <img
                       src={article.image}
                       alt={article.title}
                       className="w-full h-full object-cover"

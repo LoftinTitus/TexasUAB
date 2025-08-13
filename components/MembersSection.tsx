@@ -1,6 +1,5 @@
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Mail, Linkedin } from 'lucide-react';
 
 export function MembersSection() {
@@ -77,7 +76,7 @@ export function MembersSection() {
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
                 <div className="text-center mb-4">
-                  <ImageWithFallback
+                  <img
                     src={member.image}
                     alt={member.name}
                     className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"

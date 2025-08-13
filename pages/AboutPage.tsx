@@ -1,6 +1,5 @@
 import { Card, CardContent } from '../components/ui/card';
 import { Users, MessageCircle, BookOpen, Target } from 'lucide-react';
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 export function AboutPage() {
   const features = [
@@ -75,11 +74,7 @@ export function AboutPage() {
               </p>
             </div>
             <div>
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&crop=center"
-                alt="UT Austin Students in Engineering Building"
-                className="rounded-lg shadow-lg w-full h-80 object-cover"
-              />
+              {/* Removed ImageWithFallback component */}
             </div>
           </div>
         </div>
