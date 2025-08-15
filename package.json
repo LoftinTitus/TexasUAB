@@ -1,5 +1,6 @@
 {
   "name": "texasuab",
+  "homepage": "https://LoftinTitus.github.io/TexasUAB/",
   "version": "0.1.0",
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
@@ -27,7 +28,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "vite build --base=/TexasUAB/",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   }
 }
